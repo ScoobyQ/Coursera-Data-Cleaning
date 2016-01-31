@@ -2,11 +2,11 @@
 Code Book
 ______________
 
-Run Analysis
+Run_analysis.R
 _______________
 Data Summary
 
-30 subjects involved in a study using accelerometers and gyroscopes in Samsung smartphones generated data for 6 different physical activities.
+30 subjects were involved in a study using accelerometers and gyroscopes in Samsung smartphones that generated data for 6 different physical activities.
 
 The original dataset included 26 files. Those pertinent to the analysis are:
 
@@ -19,12 +19,12 @@ The original dataset included 26 files. Those pertinent to the analysis are:
 "features.txt"
 "Activity_Labels.txt"
 
-For the purposes of this submission there are two additional files:
+In addition this repo contains:
 
 run_analysis.R  (the code to run the file merging and creation of new dataset populated with mean and stds) 
 README.md (description of project)
 
-File Descriptions:
+File Descriptions (Input data):
 
 There are two sets of files, train and test files. The train files have 7352 observations (rows) and the test files have 2947 observations (rows). 21 subjects are in the training group. 9 subjects are in the test group.
 
@@ -39,8 +39,8 @@ There are 21 train subjects with numbers: 1, 3, 5, 6, 7, 8, 11, 14, 15, 16, 17, 
 There are 9 test subjects with numbers: 2, 4, 9, 10, 12, 13, 18, 20, & 24.
 
 X Files:
-•	"X_test.txt"
-•	"X_train.txt"
+"X_test.txt"
+"X_train.txt"
 
 There are 561 variables in each file. Each variable (column) corresponds to a number in the features.txt file.
 There are 7352 observations(rows) for the training set and 2947 observations(rows) for the test.
@@ -60,7 +60,7 @@ The subject_test and subject_train files indicates the activities that each pers
 1 WALKING  2 WALKING_UPSTAIRS  3 WALKING_DOWNSTAIRS  4 SITTING  5 STANDING  6 LAYING
 
 Sudo Code
-Creating a Tidy Data Set
+Creating a Tidy Data Set (i.e. Transformations)
 
 Create a tidy data set that merges the test and train data into one data.frame and labels the columns so they are understandable.
 
@@ -85,6 +85,9 @@ mean_std <- data[,c(1,2,find_var)]
 9 Calculate grouped means(by subject/label) using melt and dcast
 
 10 Save tidy dataset using write.table as tab-delimited text file called tidy_data.txt
+
+Output data:
+tidy_data.txt
 
 Feature Selection 
 _______________
