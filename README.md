@@ -22,8 +22,8 @@ Good luck!
 
 Steps to reproduce this project:
 
-Source the R script run_analysis.R in Rstudio
-Change the parameter of the setwd function call to the location of the unzipped folder UCI HAR Dataset 
+Source the R script run_analysis.R in Rstudio; 
+Change the parameter of the setwd function call to the location of the unzipped folder UCI HAR Dataset; 
 Run run_analysis.R 
 
 Outputs produced:
